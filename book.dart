@@ -17,7 +17,7 @@ class Book {
     pagesRead += pages;
   }
 
-  // Getter
+
   int getPagesRead() {
     return pagesRead;
   }
