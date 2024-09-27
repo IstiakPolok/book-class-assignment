@@ -1,7 +1,7 @@
 import 'book.dart';
 
 void main() {
-  // Create three Book objects
+  // Book objects
   Book book1 = Book("Kafka on the Shore", "Haruki Murakami", 2002);
   Book book2 = Book("The God of Small Things", "Arundhati Roy", 1997);
   Book book3 = Book("Norwegian Wood", "Haruki Murakami", 1987);
@@ -13,7 +13,7 @@ void main() {
   Book book9 = Book("The Book Thief", "Markus Zusak", 2005);
   Book book10 = Book("A Tale for the Time Being", "Ruth Ozeki", 2013);
 
-  // Simulate reading pages
+  //reading pages
   book1.read(50);
   book2.read(100);
   book3.read(75);
@@ -25,7 +25,7 @@ void main() {
   book9.read(80);
   book10.read(100);
 
-  // Print details for each book
+  // books print details
   List<Book> books = [book1, book2, book3, book4, book5, book6, book7, book8, book9, book10];
   for (var book in books) {
     print("Title: ${book.getTitle()}");
@@ -35,6 +35,6 @@ void main() {
     print("Book Age: ${book.getBookAge()} years\n");
   }
 
-  // Print total number of Book objects created
+  // Print total number of Books
   print("Total number of books created: ${Book.totalBooks}");
 }

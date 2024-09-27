@@ -4,7 +4,7 @@ class Book {
   int publicationYear;
   int pagesRead = 0;
 
-  // Static property to track total books created
+  // Static property  total books count
   static int totalBooks = 0;
 
   // Constructor
@@ -12,12 +12,12 @@ class Book {
     totalBooks++;
   }
 
-  // Method to simulate reading pages
+  //  Reading pages simulate method
   void read(int pages) {
     pagesRead += pages;
   }
 
-  // Getter methods
+  // Getter
   int getPagesRead() {
     return pagesRead;
   }
@@ -34,7 +34,7 @@ class Book {
     return publicationYear;
   }
 
-  // Method to calculate the age of the book
+  // calculate the age of the book
   int getBookAge() {
     return DateTime.now().year - publicationYear;
   }
